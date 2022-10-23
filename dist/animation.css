@@ -1,0 +1,25 @@
+span#role::before {
+    content: "Shopify";
+    color: rgb(229 231 235);
+    animation: animate infinite 3s;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 10ch;
+    max-width: 10ch;
+    min-width: 10ch;
+}
+
+@keyframes animate {
+
+    0% {
+        content: "Shopify";
+    }
+
+    50% {
+        content: "Python ";
+    }
+
+    75% {
+        content: "Shopify";
+    }
+}
