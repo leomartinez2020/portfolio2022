@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="output.css" rel="stylesheet">
-    <link href="animation.css" rel="stylesheet">
     <title>Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
 </head>
@@ -26,7 +25,7 @@
   </header>
   <section class="container px-10 font-mono">
     <h1 class="font-bold text-6xl">Leonardo Martinez</h1>
-    <h2 class="text-4xl">Junior<span id="role"></span>Developer</h2>
+    <h2 class="text-4xl">Python | Shopify Developer</h2>
   </section>
   <!-- Container for demo purpose -->
   <div class="container my-24 px-6 mx-auto">
@@ -93,6 +92,33 @@
           </div>
 
           <!-- Start card -->
+          <div class="mb-0">
+            <div class="relative block bg-white rounded-lg shadow-lg">
+              <div class="flex flex-col">
+                <div
+                  class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
+                  data-mdb-ripple="true" data-mdb-ripple-color="light">
+                  <img src="./images/hack-blog.png" class="w-full pt-8 lg:max-h-72" />
+                  <a href="https://cybersecurity-blog.vercel.app/">
+                    <div
+                      class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                      style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="p-6">
+                <h5 class="font-bold text-lg mb-3">Cybersecurity Blog</h5>
+                <p class="mb-4 pb-2">
+                  I write about my first steps hacking on Portswigger and Hack The Box.
+                </p>
+                <a href="https://cybersecurity-blog.vercel.app/" data-mdb-ripple="true" data-mdb-ripple-color="light"
+                  class="inline-block px-6 py-2.5 bg-slate-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Read
+                  more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Start card -->
           <div class="mb-6 lg:mb-0">
             <div class="relative block bg-white rounded-lg shadow-lg">
               <div class="flex flex-col">
@@ -145,33 +171,6 @@
               </div>
             </div>
           </div>
-    
-          <!-- Start card -->
-          <div class="mb-0">
-            <div class="relative block bg-white rounded-lg shadow-lg">
-              <div class="flex flex-col">
-                <div
-                  class="relative overflow-hidden bg-no-repeat bg-cover shadow-lg rounded-lg mx-4 -mt-4"
-                  data-mdb-ripple="true" data-mdb-ripple-color="light">
-                  <img src="./images/portfo-blog-python.png" class="w-full pt-8 lg:max-h-72" />
-                  <a href="https://pythonista.com.co/">
-                    <div
-                      class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
-                      style="background-color: rgba(251, 251, 251, 0.15)"></div>
-                  </a>
-                </div>
-              </div>
-              <div class="p-6">
-                <h5 class="font-bold text-lg mb-3">Pythonista Blog</h5>
-                <p class="mb-4 pb-2">
-                  Blog made with Gatsby about all things related to the Python programming language.
-                </p>
-                <a href="https://pythonista.com.co/" data-mdb-ripple="true" data-mdb-ripple-color="light"
-                  class="inline-block px-6 py-2.5 bg-slate-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Read
-                  more</a>
-              </div>
-            </div>
-          </div>
         </div>
     
       </section>
@@ -184,11 +183,14 @@
   <div class="container mt-32 flex justify-between items-center mx-auto px-4 md:px-14 lg:px-24 w-full">
     <section class="w-full">
       <h2 class="text-4xl font-bold mb-6 pb-4 text-center" id="certifications">Certifications</h2>
-      <div class="w-full py-5 items-center mx-auto my-2">
-        <img src="./images/awsWeb.png" alt="aws certification" class="mx-auto w-1/2">
+      <!-- <div class="w-full py-5 items-center mx-auto my-2"> -->
+      <!-- <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"> -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-5">
+        <img src="./images/awsWeb.png" alt="aws certification" class="mx-auto max-w-full">
       </div>
-      <div class="w-full py-5 items-center mx-auto my-2">
-        <img src="./images/lpi-linuxWeb.png" alt="linux certification" class="mx-auto w-1/2">
+      <!-- <div class="w-full py-5 items-center mx-auto my-2"> -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-5">
+        <img src="./images/lpi-linuxWeb.png" alt="linux certification" class="mx-auto max-w-full">
       </div>
     </section>
   </div>
